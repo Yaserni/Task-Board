@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks</title>
+    <script defer src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div>
+        <div class="Center">
+            <Label class="title">My Task Board</Label>
+        </div>
+        <div class="Center">
+
+            <form class="myForm">
+                <br>
+                <br>
+
+                <textarea id="taskContent" cols="30" rows="3" class="EmptyBG"
+                    placeholder="type here the task"></textarea>
+                <br>
+                <span id="contentError" class="errorMessage"></span>
+                <br>
+                <input type="date" id="taskDate" placeholder="Type date : dd/mm/yyyy" autocomplete="off" required
+                    class="EmptyBG">
+                <span id="dateError" class="errorMessage dateE"></span>
+                <br>
+                <input type="text" id="taskHour" placeholder="Type hour : hh:mm" autocomplete="off" required
+                    class="EmptyBG">
+                <span id="hourError" class="errorMessage"></span>
+                <br>
+                <button type="button" onclick="saveTask()" class="btn btn-primary spec">Save</button>
+                
+                <button type="button" class="btn btn-primary " onclick="clearInputs()">Clear</button>
+            </form>
+        </div>
+    </div>
+    <section id="tasksSection">
+
+    </section>
+</body>
+
+</html>

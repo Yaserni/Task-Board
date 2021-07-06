@@ -1,0 +1,116 @@
+body {
+    background-image: url("assets/images/tile.jpg");
+}
+
+.title {
+    font-size: 100px;
+    font-family: NiceFont;
+}
+
+div {
+    width: 100%;
+}
+
+.myForm {
+    background-image: url("assets/images/formbg.jpg");
+    width: 600px;
+    padding-left: 80px;
+}
+
+.EmptyBG {
+    background: transparent;
+    border: none;
+    font-size: large;
+    outline: none;
+    margin-bottom: 5px;
+}
+
+#taskContent {
+    resize: none;
+    width: 400px;
+    height: 92px;
+    margin-top: -15px;
+    border: none;
+    outline: none;
+}
+
+.errorMessage {
+    color: red;
+    width: 200px;
+}
+
+#contentError {
+    padding-left: 232px;
+}
+
+.noteDisplay {
+    background-image: url("assets/images/notebg.png");
+    width: 180px;
+    height: 240px;
+    padding-top: 15px;
+    animation: fadeInAnimation ease 3s;
+    margin: 20px;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.insideNote {
+    margin-top: 5px;
+    padding-left: 5px;
+    width: 170px;
+    height: 150px;
+    background: transparent;
+    border: none;
+    resize: none;
+    overflow: auto;
+    font-size: 15px !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+
+.NoteTime {
+    padding-left: 5px;
+    padding-top: 10px;
+    font-size: 15px !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+
+#tasksSection {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.deleteButton {
+    margin-left: 155px;
+    /* height: 0; */
+    /* width: 0; */
+    background: transparent;
+    border: none;
+    visibility: hidden;
+}
+
+.spec {
+    margin-right: 30px;
+}
+
+@font-face {
+    src: url("assets/fonts/Hiatus.ttf");
+    font-family: NiceFont;
+}
+
+.Center {
+    display: flex;
+    justify-content: center;
+}
+
+.dateE {
+    padding-left: 45px;
+}
